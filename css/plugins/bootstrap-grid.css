@@ -5116,3 +5116,27 @@
 .resize-none {
   resize: none;
 }
+
+.text-black {
+  color: #111 !important;
+}
+
+.invert {
+  filter: invert(1) !important;
+}
+
+.btn-padding {
+  padding: 14px 15px 14px 50px !important;
+}
+
+.border-yello {
+  border: 2px solid rgb(255, 152, 0);
+}
+
+.border-black {
+  border: 2px solid #111 !important;
+}
+
+.radius-50 {
+  border-radius: 50px;
+}
