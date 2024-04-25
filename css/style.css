@@ -1370,6 +1370,7 @@ frame
 
 @media screen and (max-width: 1200px) {
   .mil-frame {
+    position: sticky;
     padding: 0;
     z-index: 999;
     height: 90px;
@@ -4823,4 +4824,8 @@ html.is-animating .mil-menu-frame {
   opacity: 0;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+
+.mil-logo-second {
+  position: absolute;
 }

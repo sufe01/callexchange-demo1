@@ -1050,3 +1050,27 @@ $(function () {
     });
 
 });
+
+// --Sufe-Changes
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('a[href]');
+    links.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        var href = this.getAttribute('href');
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 404) {
+              window.location.href = '404.html';
+            } else {
+              window.location.href = href;
+            }
+          }
+        };
+        xhr.open('GET', href, true);
+        xhr.send();
+        event.preventDefault();
+      });
+    });
+  });
